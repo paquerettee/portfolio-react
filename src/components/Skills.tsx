@@ -1,5 +1,26 @@
 import { Box, Container, Typography, List, ListItem } from "@mui/material";
 
+const skills = {
+  Development: [
+    "Frontend: JavaScript, TypeScript, React, HTML, CSS3, SASS, Bootstrap, Tailwind",
+    "Backend: Python, Django, REST API, CRUD, C++, C#, PostgreSQL, MS SQL",
+    "UI/UX Design: Interface design, user experience optimization",
+  ],
+  "Tools & Technologies": [
+    "Git, GitHub, Subversion",
+    "Vercel, Windows, Linux",
+    "Unit & Functional Testing",
+    "AI Integration & Prompt Engineering (ChatGPT, Copilot)",
+  ],
+  "Workflow & Collaboration": [
+    "Agile (Scrum)",
+    "Clear Code, Code Review",
+    "Team Communication",
+    "Scheduling & Coordination",
+    "Cross‑functional Collaboration",
+  ],
+};
+
 export default function Skills() {
   return (
     <Box
@@ -17,36 +38,9 @@ export default function Skills() {
         </Typography>
 
         <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={4}>
-          <SkillItem
-            title="Development"
-            skills={[
-              "UI/UX Design",
-              "HTML, CSS, SASS, Bootstrap, Tailwind",
-              "JavaScript, React, Node.js",
-              "Python, Django",
-              "C++, C#",
-            ]}
-          />
-
-          <SkillItem
-            title="Tools & Technologies"
-            skills={[
-              "Git, GitHub & Subversion",
-              "RESTful APIs & CRUD operations",
-              "PostgreSQL, MS SQL",
-              "Unit & Functional Testing",
-              "AI Integration & Prompt Engineering",
-            ]}
-          />
-          <SkillItem
-            title="Team & Workflow"
-            skills={[
-              "Agile (Scrum)",
-              "Team Communication",
-              "Scheduling & Coordination",
-              "Cross‑functional Collaboration",
-            ]}
-          />
+          {Object.keys(skills).map((category) => (
+            <SkillItem key={category} title={category} skills={skills[category]} />
+          ))}
         </Box>
       </Container>
     </Box>

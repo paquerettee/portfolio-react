@@ -14,9 +14,20 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "'Rosarivo', cursive", // Rosarivo - cursive font
+    fontFamily: [
+      "ui-sans-serif",
+      "system-ui",
+      "sans-serif",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Noto Color Emoji",
+    ].join(","),
+
     h1: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
     h2: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
+    h3: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
+    h6: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
   },
 });
 

@@ -19,7 +19,7 @@ export default function Contact() {
           Contact
         </Typography>
         <Typography variant="body1" align="center" sx={{ mb: 4 }}>
-          Masz pytania lub chcesz współpracować? Napisz do mnie!
+          Want to team up or just say hi? Get in touch!
         </Typography>
 
         {/* Formularz */}
