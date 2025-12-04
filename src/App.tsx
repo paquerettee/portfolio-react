@@ -27,6 +27,8 @@ const theme = createTheme({
     h1: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
     h2: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
     h3: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
+    h4: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
+    h5: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
     h6: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
   },
 });

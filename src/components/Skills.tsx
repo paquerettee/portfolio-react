@@ -2,8 +2,8 @@ import { Box, Container, Typography, List, ListItem } from "@mui/material";
 
 const skills = {
   Development: [
-    "Frontend: JavaScript, TypeScript, React, HTML, CSS3, SASS, Bootstrap, Tailwind",
-    "Backend: Python, Django, REST API, CRUD, C++, C#, PostgreSQL, MS SQL",
+    "Frontend: JavaScript, TypeScript, React, HTML, CSS3, SASS, Tailwind",
+    "Backend: Python, Django, REST API, CRUD, C++, C#, PostgreSQL",
     "UI/UX Design: Interface design, user experience optimization",
   ],
   "Tools & Technologies": [
@@ -16,7 +16,6 @@ const skills = {
     "Agile (Scrum)",
     "Clear Code, Code Review",
     "Team Communication",
-    "Scheduling & Coordination",
     "Cross‑functional Collaboration",
   ],
 };
@@ -56,7 +55,7 @@ function SkillItem({ title, skills }) {
       alignItems="center"
       justifyContent="flex-start"
     >
-      <Typography variant="h5" gutterBottom>
+      <Typography variant="h6" gutterBottom align="center">
         {title}
       </Typography>
       <List>
