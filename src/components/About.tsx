@@ -4,12 +4,10 @@ import ComponentContainer from "./ComponentContainer";
 export default function About() {
   return (
     <ComponentContainer componentId="about" bgcolor="white">
-      <Container maxWidth="md" sx={{ py: 4 }}>
-        <Typography variant="h3" gutterBottom align="center">
-          About Me
-        </Typography>
+      <Container maxWidth="md" sx={{ py: 8 }}>
+        <Typography variant="h3">About Me</Typography>
 
-        <Typography variant="body1" sx={{ lineHeight: 1.8, textAlign: "center" }}>
+        <Typography variant="body1" sx={{ p: 2, lineHeight: 1.8, textAlign: "center" }}>
           Hi, I’m Kathy. I’ve always loved math and foreign languages, so technology felt like a
           natural choice — a space where I could put both to practical use. I studied at Wrocław
           University of Technology, where I earned my master’s degree in Computer Science, I worked

@@ -30,11 +30,9 @@ export default function Skills() {
   return (
     <ComponentContainer componentId="skills" backgroundImage="/img/watercolor-4116932_1280.png">
       <Container sx={{ py: 8 }}>
-        <Typography variant="h3" gutterBottom align="center">
-          Skills
-        </Typography>
+        <Typography variant="h3">Skills</Typography>
 
-        <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={4}>
+        <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={4} sx={{ p: 2 }}>
           {Object.keys(skills).map((category) => (
             <SkillItem key={category} title={category} skills={skills[category]} />
           ))}

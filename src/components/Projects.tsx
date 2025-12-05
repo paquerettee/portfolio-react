@@ -51,9 +51,7 @@ export default function Projects() {
   return (
     <ComponentContainer componentId="projects" bgcolor="white">
       <Container id="projects" maxWidth="lg" sx={{ py: 8 }}>
-        <Typography variant="h3" gutterBottom align="center">
-          Projects
-        </Typography>
+        <Typography variant="h3">Projects</Typography>
 
         <Box
           sx={{
@@ -64,8 +62,7 @@ export default function Projects() {
               md: "repeat(3, 1fr)", // desktop
             },
             gap: 3,
-            pt: 6,
-            px: 2,
+            p: 2,
           }}
         >
           {projects.map((project) => (

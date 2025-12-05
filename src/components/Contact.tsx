@@ -8,28 +8,22 @@ export default function Contact() {
   return (
     <ComponentContainer componentId="contact" backgroundImage="/img/watercolor-4114530_1280_22.png">
       <Container maxWidth="md" sx={{ py: 8 }}>
-        <Typography variant="h3" gutterBottom align="center">
-          Contact
-        </Typography>
+        <Typography variant="h3">Contact</Typography>
 
-        {/* <Typography variant="body1" align="center" sx={{ mb: 4 }}> */}
         <Typography variant="h6" gutterBottom align="center" sx={{ mb: 4 }}>
           Want to team up or just say hi? Get in touch!
         </Typography>
 
-        <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={2}>
-          {/* <Box sx={{ pt: 6, px: 4, width: "100%" }}> */}
+        <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={2} sx={{ p: 2 }}>
           <Box
             sx={{
               display: "flex",
-              flexBasis: { md: "33.333%" }, // md:basis-1/3
-              // justifyContent: { xs: "center", md: "left" }, // md:justify-center
+              flexBasis: { md: "33.333%" },
             }}
           >
             <Box>
               {/* Email */}
               <Box>
-                {/* <Typography variant="body1" fontWeight="bold" color="text.primary" mt={2}> */}
                 <Typography variant="subtitle1" sx={{ fontWeight: "bold", color: "text.primary" }}>
                   Email:
                 </Typography>
@@ -42,7 +36,7 @@ export default function Contact() {
                     display: "inline-flex",
                   }}
                 >
-                  {<EmailIcon sx={{ mr: 1 }} />} paquerettee@gmail.com
+                  {<EmailIcon sx={{ mr: 1 }} />} kathy.fullstack@gmail.com
                 </Typography>
               </Box>
 
@@ -59,7 +53,6 @@ export default function Contact() {
                     underline="none"
                     sx={{
                       display: "inline-flex",
-                      // color: "#0077b5",
                       color: "text.secondary",
                       "&:hover": { textDecoration: "underline" },
                     }}
@@ -87,8 +80,7 @@ export default function Contact() {
           {/* contact form */}
           <Box
             sx={{
-              flex: 1, // flex-grow: 1
-              // maxWidth: "48rem",
+              flex: 1,
             }}
           >
             <Box
@@ -111,7 +103,6 @@ export default function Contact() {
                 type="submit"
                 variant="contained"
                 color="primary"
-                // variant="outlined"
                 sx={{
                   textTransform: "none",
                 }}

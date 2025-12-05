@@ -27,7 +27,13 @@ let theme = createTheme({
 
     h1: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
     h2: { fontFamily: "'Rosarivo', cursive", fontWeight: 700, textAlign: "center" },
-    h3: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
+    h3: {
+      fontFamily: "'Rosarivo', cursive",
+      fontWeight: 700,
+      textAlign: "center",
+      marginBottom: "16px",
+      paddingTop: "8px",
+    },
     h4: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
     h5: { fontFamily: "'Rosarivo', cursive", fontWeight: 700, textAlign: "center" },
     h6: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },

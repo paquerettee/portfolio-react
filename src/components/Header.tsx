@@ -48,6 +48,7 @@ export default function Header() {
           paper: {
             sx: {
               width: "20%",
+              minWidth: "100px",
               overflowX: "hidden",
               ml: "auto",
               p: 1,
