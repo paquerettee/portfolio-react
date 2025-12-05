@@ -1,4 +1,5 @@
 import { Box, Container, Typography, List, ListItem } from "@mui/material";
+import ComponentContainer from "./ComponentContainer";
 
 interface SkillCategoryProps {
   title: string;
@@ -27,16 +28,8 @@ const skills: Record<string, string[]> = {
 
 export default function Skills() {
   return (
-    <Box
-      id="skills"
-      sx={{
-        py: 8,
-        backgroundImage: "url('/img/watercolor-4116932_1280.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <Container maxWidth="lg" sx={{ py: 8 }}>
+    <ComponentContainer componentId="skills" backgroundImage="/img/watercolor-4116932_1280.png">
+      <Container sx={{ py: 8 }}>
         <Typography variant="h3" gutterBottom align="center">
           Skills
         </Typography>
@@ -47,7 +40,7 @@ export default function Skills() {
           ))}
         </Box>
       </Container>
-    </Box>
+    </ComponentContainer>
   );
 }
 

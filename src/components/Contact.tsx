@@ -2,18 +2,11 @@ import { Container, Typography, TextField, Button, Box, Stack, Link } from "@mui
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import ComponentContainer from "./ComponentContainer";
 
 export default function Contact() {
   return (
-    <Box
-      id="contact"
-      sx={{
-        py: 8,
-        backgroundImage: "url('/img/watercolor-4114530_1280_22.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <ComponentContainer componentId="contact" backgroundImage="/img/watercolor-4114530_1280_22.png">
       <Container maxWidth="md" sx={{ py: 8 }}>
         <Typography variant="h3" gutterBottom align="center">
           Contact
@@ -98,11 +91,24 @@ export default function Contact() {
               // maxWidth: "48rem",
             }}
           >
-            <Box component="form" sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-              <TextField label="Your Name" variant="outlined" fullWidth />
-              <TextField label="Your Email" variant="outlined" fullWidth />
-              <TextField label="Message" variant="outlined" multiline rows={4} fullWidth />
+            <Box
+              component="form"
+              action="https://formspree.io/f/mnnglqpq"
+              method="POST"
+              sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+            >
+              <TextField name="name" label="Your Name" variant="outlined" fullWidth />
+              <TextField name="email" label="Your Email" variant="outlined" fullWidth />
+              <TextField
+                name="message"
+                label="Message"
+                variant="outlined"
+                multiline
+                rows={4}
+                fullWidth
+              />
               <Button
+                type="submit"
                 variant="contained"
                 color="primary"
                 // variant="outlined"
@@ -116,6 +122,6 @@ export default function Contact() {
           </Box>
         </Box>
       </Container>
-    </Box>
+    </ComponentContainer>
   );
 }

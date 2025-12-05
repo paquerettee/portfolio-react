@@ -1,28 +1,25 @@
-import { Box, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
+import ComponentContainer from "./ComponentContainer";
 
 export default function Hero() {
   return (
-    <Box
-      id="home"
-      sx={{
-        margin: "0",
-        width: "100%",
-        maxWidth: "100%",
-        minHeight: "100vh",
-        backgroundImage: "url('/img/watercolor-4114530_1280_12.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        color: "black",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        p: 0,
-      }}
-    >
-      <Typography variant="h2">Hi I'm Kathy</Typography>
-      <Typography variant="h5">software developer</Typography>
-    </Box>
+    <ComponentContainer componentId="home" backgroundImage="/img/watercolor-4114530_1280_12.png">
+      <Container
+        maxWidth="lg"
+        sx={{
+          width: "100%",
+          maxWidth: "100%",
+          height: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          py: 0,
+        }}
+      >
+        <Typography variant="h2">Hi I'm Kathy</Typography>
+        <Typography variant="h5">software developer</Typography>
+      </Container>
+    </ComponentContainer>
   );
 }

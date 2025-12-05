@@ -1,4 +1,5 @@
 import { Container, Typography, Box, Card, CardContent, CardMedia, Button } from "@mui/material";
+import ComponentContainer from "./ComponentContainer";
 
 interface Project {
   title: string;
@@ -48,29 +49,31 @@ const projects = [
 
 export default function Projects() {
   return (
-    <Container id="projects" maxWidth="lg" sx={{ py: 8 }}>
-      <Typography variant="h3" gutterBottom align="center">
-        Projects
-      </Typography>
+    <ComponentContainer componentId="projects" bgcolor="white">
+      <Container id="projects" maxWidth="lg" sx={{ py: 8 }}>
+        <Typography variant="h3" gutterBottom align="center">
+          Projects
+        </Typography>
 
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: {
-            xs: "1fr", // mobile
-            sm: "repeat(2, 1fr)", // tablet
-            md: "repeat(3, 1fr)", // desktop
-          },
-          gap: 3,
-          pt: 6,
-          px: 2,
-        }}
-      >
-        {projects.map((project) => (
-          <ProjectItem key={project.title} project={project} />
-        ))}
-      </Box>
-    </Container>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr", // mobile
+              sm: "repeat(2, 1fr)", // tablet
+              md: "repeat(3, 1fr)", // desktop
+            },
+            gap: 3,
+            pt: 6,
+            px: 2,
+          }}
+        >
+          {projects.map((project) => (
+            <ProjectItem key={project.title} project={project} />
+          ))}
+        </Box>
+      </Container>
+    </ComponentContainer>
   );
 }
 

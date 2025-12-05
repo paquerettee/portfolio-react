@@ -1,5 +1,5 @@
-import { AppBar, Toolbar, Typography, Button, Stack, Drawer } from "@mui/material";
-// import CloseIcon from "@mui/icons-material/Close";
+import { AppBar, Toolbar, Typography, Button, Stack, Drawer, Box } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import IconButton from "@mui/material/IconButton";
 import { useState } from "react";
@@ -33,7 +33,6 @@ export default function Header() {
             aria-label="menu"
             onClick={toggleMenu}
             sx={{ display: { xs: "flex", md: "none" } }}
-            //  sx={{ mr: 0, display: { md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -47,31 +46,50 @@ export default function Header() {
         onClose={toggleMenu}
         slotProps={{
           paper: {
-            sx: { width: "30%", ml: "auto" }, //  mt: "64px",
+            sx: {
+              width: "20%",
+              overflowX: "hidden",
+              ml: "auto",
+              p: 1,
+            },
           },
         }}
-        // hideBackdrop
       >
-        <MenuComponent display={{ xs: "flex", md: "none" }} />
+        <Box sx={{ p: 2, position: "relative", height: "32px" }}>
+          <IconButton
+            edge="end"
+            color="inherit"
+            aria-label="menu"
+            onClick={toggleMenu}
+            sx={{
+              display: { xs: "flex", md: "none" },
+              borderRadius: 0,
+              position: "absolute",
+              top: "-10px",
+              right: "2px",
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+        </Box>
+        <MenuComponent display={{ xs: "flex", md: "none", py: "10px" }} />
       </Drawer>
     </>
   );
 }
 
 function MenuComponent({ display = { xs: "none", md: "flex" } }) {
-  // console.log("menuOpen: ", menuOpen);
   return (
     <Stack
       id="menu"
       direction={{ xs: "column", md: "row" }}
-      // spacing={{ xs: 2, md: 6 }}
+      spacing={{ xs: 2, md: 6 }}
       sx={{
         display,
-        // { xs: menuOpen ? "flex" : "none", md: "flex" },
         alignItems: "flex-end",
         justifyContent: "flex-end",
-        // px: { xs: 0, md: 2 },
-        // py: { xs: 2, md: 0 },
+        px: { xs: 0, md: 2 },
+        py: { xs: 2, md: 0 },
       }}
     >
       <Button color="inherit" href="#home">
