@@ -1,6 +1,11 @@
 import { Box, Container, Typography, List, ListItem } from "@mui/material";
 
-const skills = {
+interface SkillCategoryProps {
+  title: string;
+  skills: string[];
+}
+
+const skills: Record<string, string[]> = {
   Development: [
     "Frontend: JavaScript, TypeScript, React, HTML, CSS3, SASS, Tailwind",
     "Backend: Python, Django, REST API, CRUD, C++, C#, PostgreSQL",
@@ -46,7 +51,7 @@ export default function Skills() {
   );
 }
 
-function SkillItem({ title, skills }) {
+function SkillItem({ title, skills }: SkillCategoryProps) {
   return (
     <Box
       flex={1}

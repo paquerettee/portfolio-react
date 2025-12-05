@@ -1,5 +1,16 @@
 import { Container, Typography, Box, Card, CardContent, CardMedia, Button } from "@mui/material";
 
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
+
+interface ProjectItemProps {
+  project: Project;
+}
+
 const projects = [
   {
     title: "CSS grid training",
@@ -63,7 +74,7 @@ export default function Projects() {
   );
 }
 
-function ProjectItem({ project }) {
+function ProjectItem({ project }: ProjectItemProps) {
   return (
     <Card sx={{ width: "100%", height: 465 }}>
       <CardMedia

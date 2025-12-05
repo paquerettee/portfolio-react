@@ -1,6 +1,4 @@
-import { Box, Typography, IconButton } from "@mui/material";
-// import GitHubIcon from "@mui/icons-material/GitHub";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Box, Typography } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -15,15 +13,6 @@ export default function Footer() {
       }}
     >
       <Typography variant="body2">© {new Date().getFullYear()} Kathy Codes</Typography>
-
-      {/* <Box sx={{ mt: 1 }}>
-        <IconButton href="https://github.com/username" target="_blank" color="inherit">
-          {/* <GitHubIcon /> *}
-        </IconButton>
-        <IconButton href="https://linkedin.com/in/username" target="_blank" color="inherit">
-          {/* <LinkedInIcon /> *}
-        </IconButton>
-      </Box> */}
     </Box>
   );
 }
