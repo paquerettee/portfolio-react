@@ -51,6 +51,7 @@ export default function Header() {
               overflowX: "hidden",
               ml: "auto",
               p: 1,
+              borderRadius: "0 0 0 4px",
             },
           },
         }}
@@ -65,14 +66,14 @@ export default function Header() {
               display: { xs: "flex", md: "none" },
               borderRadius: 0,
               position: "absolute",
-              top: "-10px",
-              right: "2px",
+              top: "-8px",
+              right: "4px",
             }}
           >
             <CloseIcon />
           </IconButton>
         </Box>
-        <MenuComponent display={{ xs: "flex", md: "none", py: "10px" }} />
+        <MenuComponent display={{ xs: "flex", md: "none" }} />
       </Drawer>
     </>
   );
