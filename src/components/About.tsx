@@ -4,7 +4,7 @@ import ComponentContainer from "./ComponentContainer";
 export default function About() {
   return (
     <ComponentContainer componentId="about" bgcolor="white">
-      <Container maxWidth="md" sx={{ py: 8 }}>
+      <Container maxWidth="md">
         <Typography variant="h3">About Me</Typography>
 
         <Typography variant="body1" sx={{ p: 2, lineHeight: 1.8, textAlign: "center" }}>

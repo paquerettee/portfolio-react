@@ -21,7 +21,7 @@ export default function Header() {
       >
         <Toolbar sx={{ justifyContent: "space-between", alignItems: "center", height: 64 }}>
           {/* Logo */}
-          <Typography variant="h6">Kathy Codes</Typography>
+          <Typography variant="h5">Kathy Codes</Typography>
 
           {/* Menu - desktop */}
           <MenuComponent display={{ xs: "none", md: "flex" }} />
@@ -47,8 +47,8 @@ export default function Header() {
         slotProps={{
           paper: {
             sx: {
-              width: "20%",
-              minWidth: "100px",
+              width: "25%",
+              minWidth: "120px",
               overflowX: "hidden",
               ml: "auto",
               p: 1,

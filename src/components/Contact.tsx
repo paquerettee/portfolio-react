@@ -7,11 +7,11 @@ import ComponentContainer from "./ComponentContainer";
 export default function Contact() {
   return (
     <ComponentContainer componentId="contact" backgroundImage="/img/watercolor-4114530_1280_22.png">
-      <Container maxWidth="md" sx={{ py: 8 }}>
+      <Container maxWidth="md">
         <Typography variant="h3">Contact</Typography>
 
-        <Typography variant="h6" gutterBottom align="center" sx={{ mb: 4 }}>
-          Want to team up or just say hi? Get in touch!
+        <Typography variant="h6" align="center" sx={{ py: 2, whiteSpace: "pre-line" }}>
+          {`Want to team up or just say hi?\nGet in touch!`}
         </Typography>
 
         <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={2} sx={{ p: 2 }}>

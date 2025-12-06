@@ -3,7 +3,11 @@ import ComponentContainer from "./ComponentContainer";
 
 export default function Hero() {
   return (
-    <ComponentContainer componentId="home" backgroundImage="/img/watercolor-4114530_1280_12.png">
+    <ComponentContainer
+      componentId="home"
+      backgroundImage="/img/watercolor-4114530_1280_12.png"
+      paddingY={0}
+    >
       <Container
         maxWidth="lg"
         sx={{
@@ -14,7 +18,6 @@ export default function Hero() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          py: 0,
         }}
       >
         <Typography variant="h2">Hi I'm Kathy</Typography>

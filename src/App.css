@@ -14,5 +14,6 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 32px;
 }
 /* or: npm install react-scroll - more control for example offset*/

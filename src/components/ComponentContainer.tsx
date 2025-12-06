@@ -6,6 +6,7 @@ type ComponentContainerProps = {
   componentId: string;
   backgroundImage?: string;
   bgcolor?: string;
+  paddingY?: number;
 };
 
 function ComponentContainer({
@@ -13,13 +14,14 @@ function ComponentContainer({
   componentId,
   backgroundImage,
   bgcolor,
+  paddingY = 8,
 }: ComponentContainerProps) {
   return (
     <Box
       id={componentId}
       sx={{
-        px: 4,
-        py: 0,
+        px: { xs: 2, md: 4 },
+        py: paddingY,
         backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
         backgroundSize: "cover",
         backgroundPosition: "center",

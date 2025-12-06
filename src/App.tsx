@@ -36,7 +36,8 @@ let theme = createTheme({
     },
     h4: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
     h5: { fontFamily: "'Rosarivo', cursive", fontWeight: 700, textAlign: "center" },
-    h6: { fontFamily: "'Rosarivo', cursive", fontWeight: 700 },
+    h6: { fontFamily: "'Rosarivo', cursive", fontWeight: 700, fontSize: "1.2rem" },
+    button: { fontSize: "1rem" },
   },
 });
 

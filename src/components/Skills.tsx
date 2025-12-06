@@ -8,9 +8,9 @@ interface SkillCategoryProps {
 
 const skills: Record<string, string[]> = {
   Development: [
-    "Frontend: JavaScript, TypeScript, React, HTML, CSS3, SASS, Tailwind",
-    "Backend: Python, Django, REST API, CRUD, C++, C#, PostgreSQL",
-    "UI/UX Design: Interface design, user experience optimization",
+    "Frontend: JavaScript, TypeScript, React, HTML, CSS3, SASS, Tailwind, MUI",
+    "Backend: Python, Django, Flask, REST API, CRUD, C++, C#, PostgreSQL",
+    "UI/UX Design: Interface design, User experience optimization",
   ],
   "Tools & Technologies": [
     "Git, GitHub, Subversion",
@@ -29,7 +29,7 @@ const skills: Record<string, string[]> = {
 export default function Skills() {
   return (
     <ComponentContainer componentId="skills" backgroundImage="/img/watercolor-4116932_1280.png">
-      <Container sx={{ py: 8 }}>
+      <Container>
         <Typography variant="h3">Skills</Typography>
 
         <Box display="flex" flexDirection={{ xs: "column", md: "row" }} gap={4} sx={{ p: 2 }}>

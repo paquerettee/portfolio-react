@@ -50,7 +50,7 @@ const projects = [
 export default function Projects() {
   return (
     <ComponentContainer componentId="projects" bgcolor="white">
-      <Container id="projects" maxWidth="lg" sx={{ py: 8 }}>
+      <Container id="projects" maxWidth="lg">
         <Typography variant="h3">Projects</Typography>
 
         <Box
